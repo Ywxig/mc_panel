@@ -32,6 +32,10 @@ body {
       transparent 16px, transparent 32px
     );
   background-size: 32px 32px;
+  color: var(--text);
+  font-family: var(--sans);
+  min-height: 100vh;
+  padding: 0 1rem;
 }
 
     /* ── ШАПКА ── */
