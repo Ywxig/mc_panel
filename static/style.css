@@ -13,13 +13,26 @@
       --sans:     'Inter', sans-serif;
     }
 
-    body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: var(--sans);
-      min-height: 100vh;
-      padding: 0 1rem;
-    }
+body {
+  background-color: #6B4226;
+  background-image:
+    repeating-linear-gradient(
+      90deg,
+      rgba(0,0,0,0.15) 0px, rgba(0,0,0,0.15) 1px,
+      transparent 1px, transparent 32px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      rgba(0,0,0,0.15) 0px, rgba(0,0,0,0.15) 1px,
+      transparent 1px, transparent 32px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(255,255,255,0.05) 0px, rgba(255,255,255,0.05) 16px,
+      transparent 16px, transparent 32px
+    );
+  background-size: 32px 32px;
+}
 
     /* ── ШАПКА ── */
     header {
