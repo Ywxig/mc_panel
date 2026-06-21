@@ -1,34 +1,13 @@
 import os
 from flask import Flask, jsonify, render_template, send_from_directory, abort
+import json
 
 app = Flask(__name__)
 
 MODS_DIR = os.path.expanduser("~/minecraft-cluster/mods")
 
-SERVERS = [
-    {
-        "name": "Vanilla 1.20",
-        "version": "1.20",
-        "ip": "100.x.x.x",
-        "port": 25565,
-        "description": "Чистая ваниль — строим, выживаем",
-    },
-    {
-        "name": "Thaumcraft 1.7.10",
-        "version": "1.7.10",
-        "ip": "100.x.x.x",
-        "port": 25566,
-        "description": "Магия, аспекты, исследования",
-    },
-    {
-        "name": "Galacticraft 1.12.2",
-        "version": "1.12.2",
-        "ip": "100.x.x.x",
-        "port": 25567,
-        "description": "Космос, планеты, ракеты",
-    },
-]
-
+with open("servers.json") as f:
+    SERVERS = json.load(f)
 
 def get_modpacks():
     if not os.path.exists(MODS_DIR):
