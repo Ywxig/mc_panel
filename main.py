@@ -30,6 +30,10 @@ def get_modpacks():
 def index():
     return render_template("index.html")
 
+@app.route("/compilations")
+def compilations():
+    return render_template("compilations.html")
+
 
 @app.route("/api/servers")
 def api_servers():
