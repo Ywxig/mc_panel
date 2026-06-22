@@ -1,6 +1,8 @@
 {% extends "base.html" %}
-{% block content %}
 
+{% block title %}Панель управления - MC//HUB{% endblock %}
+
+{% block content %}
 <main>
   <section>
     <div class="section-label">// серверы</div>
@@ -30,5 +32,4 @@
 <div class="toast" id="toast">скопировано ✓</div>
 
 <script src="{{ url_for('static', filename='js/main.js') }}"></script>
-
 {% endblock %}
