@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Vanilla 1.20",
+        "version": "1.20",
+        "ip": "mcserver",
+        "port": 25165,
+        "description": "Чистая ваниль — строим, выживаем"
+    },
+    {
+        "name": "Thaumcraft 1.7.10",
+        "version": "1.7.10",
+        "ip": "mcserver",
+        "port": 25265,
+        "description": "Магия, аспекты, исследования"
+    },
+    {
+        "name": "Galacticraft 1.12.2",
+        "version": "1.12.2",
+        "ip": "mcserver",
+        "port": 25365,
+        "description": "Космос, планеты, ракеты"
+    }
+]

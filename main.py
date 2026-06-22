@@ -4,7 +4,7 @@ import json
 
 app = Flask(__name__)
 
-MODS_DIR = os.path.expanduser("~/minecraft-cluster/mods")
+MODS_DIR = os.path.expanduser("mods")
 
 with open("servers.json") as f:
     SERVERS = json.load(f)
