@@ -8,12 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 
-</head>
-<body style="background-blend-mode: multiply;">
-
-<header>
-  <div class="logo">MC<span>//</span>HUB</div>
-</header>
+  {% block content %}
 
 <main>
   <section>
@@ -45,5 +40,4 @@
 
 <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 
-</body>
-</html>
+{% endblock %}
